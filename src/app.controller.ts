@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  validateSpam(): boolean {
+  checkSpam(): boolean {
     return this.appService.isSpam();
   }
 }
